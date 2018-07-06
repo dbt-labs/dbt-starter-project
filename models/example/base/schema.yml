@@ -1,0 +1,8 @@
+#https://docs.getdbt.com/docs/testing
+
+my_first_dbt_model:
+    constraints:
+        not_null:
+            - id
+        unique:
+            - id

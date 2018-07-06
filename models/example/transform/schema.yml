@@ -1,0 +1,10 @@
+#https://docs.getdbt.com/docs/testing
+
+my_second_dbt_model:
+    constraints:
+        not_null:
+            - id
+            - add_id
+            - multiply_id
+        unique:
+            - id
