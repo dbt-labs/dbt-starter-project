@@ -7,6 +7,6 @@
 {{ config(materialized='view') }}
 
 --it is best practice to only reference raw data in base models
---https://dbt.readme.io/docs/best-practices#section-limit-dependencies-on-raw-data
+--https://docs.getdbt.com/docs/best-practices#section-limit-dependencies-on-raw-data
 
 select 1 as id
