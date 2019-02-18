@@ -6,5 +6,7 @@
 -- Try changing 'view' to 'table', then re-running dbt
 {{ config(materialized='view') }}
 
+--it is best practice to only reference raw data in base models
+--https://docs.getdbt.com/docs/best-practices#section-limit-dependencies-on-raw-data
 
 select 1 as id
