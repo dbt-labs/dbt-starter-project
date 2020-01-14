@@ -1,9 +1,15 @@
-### dbt models for [your org/project name]
+Welcome to your new dbt project!
 
----
-- [What is dbt](https://dbt.readme.io/docs/overview)?
-- Read the [dbt viewpoint](https://dbt.readme.io/docs/viewpoint)
-- [Installation](https://dbt.readme.io/docs/installation)
-- Join the [chat](http://ac-slackin.herokuapp.com/) on Slack for live questions and support.
+### Using the starter project
 
----
+Try running the following commands:
+- dbt run
+- dbt test
+
+
+Resources:
+- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/overview)
+- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
+- Join the [chat](http://slack.getdbt.com/) on Slack for live discussions and support
+- Find [dbt events](https://events.getdbt.com) near you
+- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
