@@ -20,8 +20,8 @@ snapshot-paths: ["snapshots"]
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
-    - "target"
-    - "dbt_modules"
+  - "target"
+  - "dbt_modules"
 
 
 # Configuring models
@@ -32,6 +32,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   my_new_project:
-      # Applies to all files under models/example/
-      example:
+    # Applies to all files under models/example/
+    example:
       +materialized: view
