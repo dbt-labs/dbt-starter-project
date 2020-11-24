@@ -1,5 +1,18 @@
-
 version: 2
+sources:
+  - name: Salesforce
+    database: FIVETRAN_DATABASE
+    schema: SALESFORCE4
+    tables:
+      - name: ACCOUNT
+      - name: CAMPAIGN
+      - name: CAMPAIGN_MEMBER
+      - name: OPPORTUNITY
+      - name: OPPORTUNITY_LINE_ITEM
+      - name: PRICEBOOK_2
+      - name: PRICEBOOK_ENTRY
+      - name: PRODUCT_2
+      - name: USER
 
 models:
     - name: my_first_dbt_model
