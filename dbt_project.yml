@@ -28,11 +28,15 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
-# In this example config, we tell dbt to build all models in the example/ directory
-# as tables. These settings can be overridden in the individual model files
+# In dbt, the default materialization for a model is a view. This means, when you run 
+# dbt run or dbt build, all of your models will be built as a view in your data platform. 
+# The configuration below will override this setting for models in the example folder to 
+# instead be materialized as tables. Any models you add to the root of the models folder will 
+# continue to be built as views. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
+
 models:
   my_new_project:
     # Applies to all files under models/example/
     example:
-      materialized: view
+      +materialized: table
